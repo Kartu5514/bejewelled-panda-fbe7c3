@@ -1,99 +1,123 @@
-/* ========================= */
-/* ZULZARIAN THEME */
-/* ========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
 body{
-    background:#1a140d;
-    color:#f5e6c8;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    max-width:1000px;
+    margin:auto;
 }
 
-.hero{
-    background:linear-gradient(135deg,#6b4f1d,#2e2110);
+/* Header */
+
+.header{
+    background:linear-gradient(135deg,#6b4f1d,#2b2115);
     padding:40px 20px;
     text-align:center;
-    border-bottom:3px solid #d4af37;
+    border-radius:15px;
+    border:2px solid gold;
+    margin-bottom:25px;
 }
 
-.hero h1{
-    color:#f7d774;
-    font-size:32px;
-}
-
-.hero p{
-    color:#f5e6c8;
-}
-
-.bloodline-card{
-    background:#2b2115;
-    border-left:5px solid #d4af37;
-    border-radius:12px;
-    padding:20px;
-    margin-bottom:15px;
-}
-
-.bloodline-card h2{
-    color:#f7d774;
+.header h1{
+    color:gold;
+    font-size:36px;
     margin-bottom:10px;
 }
 
-.bloodline-card p{
-    color:#e7d7b8;
+.header p{
+    color:#f1f5f9;
+    line-height:1.6;
 }
 
-.skill-card{
-    background:#332719;
-    border:1px solid #8c6b2f;
-    border-radius:10px;
-    padding:15px;
+/* Card */
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    border-left:5px solid gold;
+    box-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+
+.card h2{
+    color:gold;
+    margin-bottom:15px;
+    border-bottom:1px solid rgba(255,215,0,.3);
+    padding-bottom:8px;
+}
+
+.card h3{
+    color:#f8d66d;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.8;
     margin-bottom:12px;
 }
 
-.skill-card h3{
-    color:#ffd966;
+/* List */
+
+.card ul{
+    padding-left:20px;
+    margin-bottom:15px;
 }
 
-.skill-card:hover{
-    transform:translateY(-3px);
-    transition:.3s;
-    box-shadow:0 0 15px rgba(212,175,55,.4);
+.card li{
+    margin-bottom:8px;
+    color:#e2e8f0;
+    line-height:1.6;
 }
 
-.tag{
+.card strong{
+    color:#f8d66d;
+}
+
+/* Back Button */
+
+.back-btn{
     display:inline-block;
-    padding:5px 10px;
-    border-radius:6px;
-    background:#d4af37;
-    color:#1a140d;
+    margin-top:20px;
+    padding:12px 20px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
     font-weight:bold;
-    font-size:12px;
+    transition:0.3s;
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
+.back-btn:hover{
+    background:#f8d66d;
+    transform:translateY(-2px);
 }
 
-table th{
-    background:#6b4f1d;
-    color:white;
-    padding:10px;
-}
+/* Responsive */
 
-table td{
-    background:#2b2115;
-    padding:10px;
-    border:1px solid #6b4f1d;
-}
+@media(max-width:768px){
 
-.footer{
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-    border-top:2px solid #d4af37;
-    color:#d9c59b;
-}
+    body{
+        padding:15px;
+    }
 
+    .header h1{
+        font-size:28px;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+}
 <div class="header">
     <h1>Zulzarian Bloodline</h1>
     <p>Bangsa petarung cepat yang dikenal karena kelincahan, kekuatan fisik, dan kemampuan bertarung eksplosif.</p>
